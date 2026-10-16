@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>swagel</title>
+<style>
+  html, body { margin: 0; background: #fff; }
+  body { text-align: center; padding: calc(50vh - 1.5rem) 0 2rem; font-family: system-ui, -apple-system, sans-serif; }
+  .s { font-size: 2rem; color: #000; cursor: pointer; user-select: none; margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+<div class="s">swagel</div>
+<script>
+  document.body.addEventListener('click', e => {
+    if (!e.target.classList.contains('s')) return;
+    const d = document.createElement('div');
+    d.className = 's';
+    d.textContent = 'swagel';
+    document.body.appendChild(d);
+  });
+</script>
+</body>
+</html>
